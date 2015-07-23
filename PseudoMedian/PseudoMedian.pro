@@ -17,10 +17,12 @@
 # Email   : hipersayan DOT x AT gmail DOT com
 # Web-Site: http://github.com/hipersayanX/DenoiseFilters
 
-TEMPLATE = subdirs
+QT += core gui
 
-SUBDIRS += \
-    Gauss \
-    Mean \
-    Median \
-    PseudoMedian
+TARGET = pseudomedian
+CONFIG += console
+CONFIG -= app_bundle
+
+TEMPLATE = app
+
+SOURCES += main.cpp
